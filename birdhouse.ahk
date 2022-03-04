@@ -225,8 +225,7 @@ seers_teleport() {
 	Return
 }
 
-home_digsite_pendant()
-{
+home_digsite_pendant() {
 	CoordMode, Pixel, Window
 	PixelSearch, digsite_pendant_X, digsite_pendant_Y, 889, 290, 1199, 553, 0xCDCD00, 0, Fast RGB
 	If (ErrorLevel = 0)
@@ -240,8 +239,7 @@ home_digsite_pendant()
 	Return
 }
 
-house_on_the_hill_magic_mushtree()
-{
+house_on_the_hill_magic_mushtree() {
 	CoordMode, Pixel, Window
 	PixelSearch, house_on_the_hill_magic_mushtree_X, house_on_the_hill_magic_mushtree_Y, 4, 28, 1525, 925, 0xCDCD00, 0, Fast RGB
 	If (ErrorLevel = 0)
