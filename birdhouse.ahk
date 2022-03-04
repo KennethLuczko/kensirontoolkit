@@ -364,8 +364,7 @@ make_birdhouse_verdant_valley_S() {
 	Return
 }
 
-verdant_valley_magic_mushtree()
-{
+verdant_valley_magic_mushtree() {
 	CoordMode, Pixel, Window
 	PixelSearch, verdant_valley_magic_mushtree_X, verdant_valley_magic_mushtree_Y, 447, 236, 838, 534, 0xB4B303, 0, Fast RGB
 	If (ErrorLevel = 0)
