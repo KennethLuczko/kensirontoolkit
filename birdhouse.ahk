@@ -300,7 +300,7 @@ make_birdhouse_verdant_valley_N() {
 		MouseClick, left, %magic_logs_X%, %magic_logs_Y%
 		Sleep, 1550, 2000
 	}
-	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 1292, 598, 1519, 923, 0x2AAA9D, 0, Fast RGB
+	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 1292, 598, 1519, 923, 0x111111, 0, Fast RGB
 	If (ErrorLevel = 0)
 	{
 		Random, random_find_ground_birdhouses, 1, 3
@@ -352,7 +352,7 @@ make_birdhouse_verdant_valley_S() {
 		MouseClick, left, %magic_logs_X%, %magic_logs_Y%
 		Sleep, 1550, 2000
 	}
-	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 643, 376, 948, 585, 0x7400CD, 0, Fast RGB
+	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 643, 376, 948, 585, 0x111111, 0, Fast RGB
 	If (ErrorLevel = 0)
 	{
 		Random, random_find_ground_birdhouses, 1, 3
@@ -426,7 +426,7 @@ make_birdhouse_mushroom_meadow_N() {
 		MouseClick, left, %magic_logs_X%, %magic_logs_Y%
 		Sleep, 1550, 2000
 	}
-	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 656, 355, 905, 556, 0x7400CD, 0, Fast RGB
+	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 656, 355, 905, 556, 0x111111, 0, Fast RGB
 	If (ErrorLevel = 0)
 	{
 		Random, random_find_ground_birdhouses, 1, 3
@@ -484,7 +484,7 @@ mushroom_meadow_birdhouse_S() {
 		birdhouse_S_Y := birdhouse_S_Y + random_find_birdhouse_S
 		MoveMouse(birdhouse_S_X, birdhouse_S_Y)
 		MouseClick, left, %birdhouse_S_X%, %birdhouse_S_Y%
-		Sleep, 7000
+		Sleep, 3500
 	}
 	Return
 }
@@ -512,7 +512,7 @@ make_birdhouse_mushroom_meadow_S() {
 		MouseClick, left, %magic_logs_X%, %magic_logs_Y%
 		Sleep, 1550, 2000
 	}
-	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 679, 356, 980, 602, 0x7E00E0, 0, Fast RGB
+	PixelSearch, ground_birdhouse_X, ground_birdhouse_Y, 679, 356, 980, 602, 0x111111, 0, Fast RGB
 	If (ErrorLevel = 0)
 	{
 		Random, random_find_ground_birdhouses, 1, 3
