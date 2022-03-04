@@ -25,7 +25,7 @@ Z::
 	verdant_valley_birdhouse_S()
 	make_birdhouse_verdant_valley_S()
 	verdant_valley_magic_mushtree()
-    mushroom_meadow_teleport() 
+    	mushroom_meadow_teleport() 
 	mushroom_meadow_birdhouse_N()
 	set_screen_south()
 	head_south()
