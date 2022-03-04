@@ -19,13 +19,14 @@ Z::
 	home_teleport()
 	home_digsite_pendant()
 	house_on_the_hill_magic_mushtree()
+	verdant_valley_teleport()
 	verdant_valley_birdhouse_N()
 	open_inventory()
 	make_birdhouse_verdant_valley_N()
 	verdant_valley_birdhouse_S()
 	make_birdhouse_verdant_valley_S()
 	verdant_valley_magic_mushtree()
-    	mushroom_meadow_teleport() 
+	mushroom_meadow_teleport() 
 	mushroom_meadow_birdhouse_N()
 	set_screen_south()
 	head_south()
@@ -205,7 +206,7 @@ home_teleport() {
 		home_Y := home_Y + random_find_home
 		MoveMouse(home_X, home_Y)
 		MouseClick, left, %home_X%, %home_Y%
-		Sleep 3500, 4900
+		Sleep 10000
 	}
 	Return
 }
@@ -227,14 +228,14 @@ seers_teleport() {
 
 home_digsite_pendant() {
 	CoordMode, Pixel, Window
-	PixelSearch, digsite_pendant_X, digsite_pendant_Y, 889, 290, 1199, 553, 0xCDCD00, 0, Fast RGB
+	PixelSearch, digsite_pendant_X, digsite_pendant_Y, 778, 171, 1217, 671, 0x111111, 0, Fast RGB
 	If (ErrorLevel = 0)
 	{
-		digsite_pendant_X := digsite_pendant_X + 15
-		digsite_pendant_Y := digsite_pendant_Y + 15
+		digsite_pendant_X := digsite_pendant_X + 5
+		digsite_pendant_Y := digsite_pendant_Y + 5
 		MoveMouse(digsite_pendant_X, digsite_pendant_Y)
 		MouseClick, left, %digsite_pendant_X%, %digsite_pendant_Y%
-		Sleep 2000, 7500
+		Sleep 10000
 	}
 	Return
 }
@@ -249,7 +250,7 @@ house_on_the_hill_magic_mushtree() {
 		house_on_the_hill_magic_mushtree_Y := house_on_the_hill_magic_mushtree_Y + random_find_house_on_the_hill_magic_mushtree
 		MoveMouse(house_on_the_hill_magic_mushtree_X, house_on_the_hill_magic_mushtree_Y)
 		MouseClick, left, %house_on_the_hill_magic_mushtree_X%, %house_on_the_hill_magic_mushtree_Y%
-		Sleep 5000, 7500
+		Sleep 10000
 	}
 	Return
 }
@@ -257,7 +258,7 @@ house_on_the_hill_magic_mushtree() {
 verdant_valley_teleport() {
 	Sleep, 500, 800
 	SendInput, {2}
-	Sleep, 500, 800
+	Sleep, 5000
 	Return
 }
 
@@ -271,7 +272,7 @@ verdant_valley_birdhouse_N() {
 		birdhouse_N_Y := birdhouse_N_Y + random_find_birdhouse_N
 		MoveMouse(birdhouse_N_X, birdhouse_N_Y)
 		MouseClick, left, %birdhouse_N_X%, %birdhouse_N_Y%
-		Sleep, 500
+		Sleep, 7000
 	}
 	Return
 }
@@ -323,6 +324,7 @@ verdant_valley_birdhouse_S() {
 		birdhouse_S_Y := birdhouse_S_Y + random_find_birdhouse_S
 		MoveMouse(birdhouse_S_X, birdhouse_S_Y)
 		MouseClick, left, %birdhouse_S_X%, %birdhouse_S_Y%
+		Sleep, 7000
 	}
 	Return
 }
@@ -382,7 +384,7 @@ verdant_valley_magic_mushtree() {
 mushroom_meadow_teleport() {
 	Sleep, 500, 800
 	SendInput, {4}
-	Sleep, 500, 800
+	Sleep, 5000
 	Return
 }
 
@@ -396,7 +398,7 @@ mushroom_meadow_birdhouse_N() {
 		birdhouse_N_Y := birdhouse_N_Y + random_find_birdhouse_N
 		MoveMouse(birdhouse_N_X, birdhouse_N_Y)
 		MouseClick, left, %birdhouse_N_X%, %birdhouse_N_Y%
-		Sleep, 3500
+		Sleep, 7000
 	}
 	Return
 }
@@ -482,7 +484,7 @@ mushroom_meadow_birdhouse_S() {
 		birdhouse_S_Y := birdhouse_S_Y + random_find_birdhouse_S
 		MoveMouse(birdhouse_S_X, birdhouse_S_Y)
 		MouseClick, left, %birdhouse_S_X%, %birdhouse_S_Y%
-		Sleep, 3500
+		Sleep, 7000
 	}
 	Return
 }
